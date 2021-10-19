@@ -25,7 +25,7 @@ What will you need to run this repository:
 - run:npm install [Testcafe](https://testcafe.io "Testcafe")
 - run: npm install [dotenv](https://testcafe.io/documentation/402802/recipes/configuration/access-environment-variables-in-tests "dotenv")
 - run: npm install testcafe-reporter-html [TestCafé Reporter](https://www.npmjs.com/package/testcafe-reporter-html "JSON TestCafé Reporter")
-- 
+
 Clone the repo into your local machine:
 `https://github.com/Karenco1014/QA-Automation-Bootcamp.git`
 
@@ -40,14 +40,14 @@ BASE_URL= [TestCafé Reporter]("https://todoist.com/")
 
 ## to run tests
 
-- scripts
-    "test": "testcafe chrome ./page_Object_Model/tests",
-    "test:runBySmoke": "testcafe chrome ./page_Object_Model/tests/*.js --test-meta Smoke=Production",
-    "test:reports": "testcafe chrome ./page_Object_Model/tests/*.js  --skip-js-erros --reporter html:reports/htmlReports/pom_report.html",
-    "test:runIboxtest": "testcafe chrome ./page_Object_Model/tests/inboxTest.js",
-    "test:runloginTest": "testcafe chrome ./page_Object_Model/tests/loginTest/*.js",
-    "test:runprojectTest": "testcafe chrome ./page_Object_Model/tests/projectTest.js",
-    "test:runtodayTest": "testcafe chrome ./page_Object_Model/tests/todayTest.js",
-    "test:runtodoistTest": "testcafe chrome ./page_Object_Model/tests/todoistTest.js",
-    "test:runLoginfixtureHeadless": "testcafe safari,chrome:headless ./page_Object_Model/tests/loginTest.js",
-    "test:confFile": "testcafe" 
+# Scripts
+   -  "test": "testcafe chrome ./page_Object_Model/tests",
+   -  "test:runBySmoke": "testcafe chrome ./page_Object_Model/tests/*.js --test-meta Smoke=Production",
+   -  "test:reports": "testcafe chrome ./page_Object_Model/tests/*.js  --skip-js-erros --reporter html:reports/htmlReports/pom_report.html",
+   -  "test:runIboxtest": "testcafe chrome ./page_Object_Model/tests/inboxTest.js",
+   -  "test:runloginTest": "testcafe chrome ./page_Object_Model/tests/loginTest/*.js",
+   -  "test:runprojectTest": "testcafe chrome ./page_Object_Model/tests/projectTest.js",
+   -  "test:runtodayTest": "testcafe chrome ./page_Object_Model/tests/todayTest.js",
+   -  "test:runtodoistTest": "testcafe chrome ./page_Object_Model/tests/todoistTest.js",
+   -  "test:runLoginfixtureHeadless": "testcafe safari,chrome:headless ./page_Object_Model/tests/loginTest.js",
+   -  "test:confFile": "testcafe" 
