@@ -19,6 +19,7 @@ This repository has to goal, fulfill the next points:
 
 What will you need to run this repository:
 
+- Download [Node.js](https://code.visualstudio.com "Visual Studio Code")
 - Download [Visual Studio Code](https://code.visualstudio.com "Visual Studio Code")
 - run: npm install
 - run:npm install [Testcafe](https://testcafe.io "Testcafe")
@@ -31,5 +32,23 @@ Clone the repo into your local machine:
 ## Before to run
 
 - cd QA-Automation-Bootcamp
+- browsers used must be installed Chrome, safari.
 - create the .env with your credentials
-- npm run test
+1. EMAIL = your@email.com
+2. PASSWORD=your_password
+3. BASE_URL= [TestCafé Reporter]("https://todoist.com/")
+
+## To run tests
+
+- Scripts
+   -  `test`: "testcafe chrome ./page_Object_Model/tests",
+   -  `test:runBySmoke`: "testcafe chrome ./page_Object_Model/tests/*.js --test-meta Smoke=Production",
+   -  `test:reports`: "testcafe chrome ./page_Object_Model/tests/*.js  --skip-js-erros --reporter html:reports/htmlReports/pom_report.html",
+   -  `test:runIboxtest`: "testcafe chrome ./page_Object_Model/tests/inboxTest.js",
+   -  `test:runloginTest`: "testcafe chrome ./page_Object_Model/tests/loginTest/*.js",
+   -  `test:runprojectTest`: "testcafe chrome ./page_Object_Model/tests/projectTest.js",
+   -  `test:runtodayTest`: "testcafe chrome ./page_Object_Model/tests/todayTest.js",
+   -  `test:runtodoistTest`: "testcafe chrome ./page_Object_Model/tests/todoistTest.js",
+   -  `test:runLoginfixtureHeadless`: "testcafe safari,chrome:headless ./page_Object_Model/tests/loginTest.js",
+   -  `test:confFile`: "testcafe" 
+   -  `test:lintInint`: "eslint --init" 
