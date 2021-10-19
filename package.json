@@ -1,0 +1,25 @@
+{
+  "name": "sqa_bootcam",
+  "version": "1.0.0",
+  "description": "SQA ",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome ./page_Object_Model/tests",
+    "test:runBySmoke": "testcafe chrome ./page_Object_Model/tests/*.js --test-meta Smoke=Production",
+    "test:reports": "testcafe chrome ./page_Object_Model/tests/*.js  --skip-js-erros --reporter html:reports/htmlReports/pom_report.html",
+    "test:runIboxtest": "testcafe chrome ./page_Object_Model/tests/inboxTest.js",
+    "test:runloginTest": "testcafe chrome ./page_Object_Model/tests/loginTest/*.js",
+    "test:runprojectTest": "testcafe chrome ./page_Object_Model/tests/projectTest.js",
+    "test:runtodayTest": "testcafe chrome ./page_Object_Model/tests/todayTest.js",
+    "test:runtodoistTest": "testcafe chrome ./page_Object_Model/tests/todoistTest.js",
+    "test:runLoginfixtureHeadless": "testcafe safari,chrome:headless ./page_Object_Model/tests/loginTest.js",
+    "test:confFile": "testcafe" 
+  },
+  "author": "Karen Correa",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "testcafe": "^1.16.1",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}
