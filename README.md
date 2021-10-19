@@ -38,9 +38,9 @@ Clone the repo into your local machine:
 2. PASSWORD=your_password
 3. BASE_URL= [TestCafé Reporter]("https://todoist.com/")
 
-## to run tests
+## To run tests
 
-# Scripts
+- Scripts
    -  `test`: "testcafe chrome ./page_Object_Model/tests",
    -  `test:runBySmoke`: "testcafe chrome ./page_Object_Model/tests/*.js --test-meta Smoke=Production",
    -  `test:reports`: "testcafe chrome ./page_Object_Model/tests/*.js  --skip-js-erros --reporter html:reports/htmlReports/pom_report.html",
