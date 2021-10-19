@@ -3,6 +3,18 @@
 Todoist is the productivity tool you need to get work and life organized. Collect tasks, organize projects, and plan your day, in this oportunity .
 [![Todoist](https://get.todoist.help/hc/article_attachments/360011665940/Web___Inbox.png "Todoist")](https://get.todoist.help/hc/article_attachments/360011665940/Web___Inbox.png "Todoist")
 
+## Goals
+
+This repository has to goal, fulfill the next points:
+
+1. Successful login. Define a test case that performs a successful login, using credentials stored in a .env file.
+2. Unsuccessful login. Define at least 3 negative scenarios for the login. Reuse the same function for all the scenarios (positive and negative).
+3. Create a new task with Today as the due date and validate it was created correctly.
+4. Create a single task selecting tomorrow as the due date and validate it was created correctly.
+5. Create 10 new tasks with Today as the due date and validate they were created correctly. Task Names should be dynamic.
+6. Create a new project, choose any color you like and add it to favorites.
+7. Delete every task created (if there’s any) after your tests.
+
 ## Installation:
 
 What will you need to run this repository:
