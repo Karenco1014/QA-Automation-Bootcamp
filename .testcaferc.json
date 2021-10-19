@@ -1,0 +1,6 @@
+{
+    "browsers": "chrome",
+    "src": "./page_Object_Model/tests/loginTest.js",
+    "selectorTimeout": "2000",
+    "assertionTimeout":"2000"
+}
