@@ -51,3 +51,4 @@ Clone the repo into your local machine:
    -  `test:runtodoistTest`: "testcafe chrome ./page_Object_Model/tests/todoistTest.js",
    -  `test:runLoginfixtureHeadless`: "testcafe safari,chrome:headless ./page_Object_Model/tests/loginTest.js",
    -  `test:confFile`: "testcafe" 
+   -  `test:lintInint`: "eslint --init" 
