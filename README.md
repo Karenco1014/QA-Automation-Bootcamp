@@ -34,6 +34,7 @@ Clone the repo into your local machine:
 - cd QA-Automation-Bootcamp
 - browsers used must be installed Chrome, safari.
 - create the .env with your credentials
+
 1. EMAIL = your@email.com
 2. PASSWORD=your_password
 3. BASE_URL= [TestCafé Reporter]("https://todoist.com/")
@@ -41,14 +42,14 @@ Clone the repo into your local machine:
 ## To run tests
 
 - Scripts
-   -  `test`: "testcafe chrome ./page_Object_Model/tests",
-   -  `test:runBySmoke`: "testcafe chrome ./page_Object_Model/tests/*.js --test-meta Smoke=Production",
-   -  `test:reports`: "testcafe chrome ./page_Object_Model/tests/*.js  --skip-js-erros --reporter html:reports/htmlReports/pom_report.html",
-   -  `test:runIboxtest`: "testcafe chrome ./page_Object_Model/tests/inboxTest.js",
-   -  `test:runloginTest`: "testcafe chrome ./page_Object_Model/tests/loginTest/*.js",
-   -  `test:runprojectTest`: "testcafe chrome ./page_Object_Model/tests/projectTest.js",
-   -  `test:runtodayTest`: "testcafe chrome ./page_Object_Model/tests/todayTest.js",
-   -  `test:runtodoistTest`: "testcafe chrome ./page_Object_Model/tests/todoistTest.js",
-   -  `test:runLoginfixtureHeadless`: "testcafe safari,chrome:headless ./page_Object_Model/tests/loginTest.js",
-   -  `test:confFile`: "testcafe" 
-   -  `test:lintInint`: "eslint --init" 
+  - `test`: "testcafe chrome ./page_Object_Model/tests",
+  - `test:runBySmoke`: "testcafe chrome ./page_Object_Model/tests/\*.js --test-meta Smoke=Production",
+  - `test:reports`: "testcafe chrome ./page_Object_Model/tests/\*.js --skip-js-erros --reporter html:reports/htmlReports/pom_report.html",
+  - `test:runIboxtest`: "testcafe chrome ./page_Object_Model/tests/inboxTest.js",
+  - `test:runloginTest`: "testcafe chrome ./page_Object_Model/tests/loginTest/\*.js",
+  - `test:runprojectTest`: "testcafe chrome ./page_Object_Model/tests/projectTest.js",
+  - `test:runtodayTest`: "testcafe chrome ./page_Object_Model/tests/todayTest.js",
+  - `test:runtodoistTest`: "testcafe chrome ./page_Object_Model/tests/todoistTest.js",
+  - `test:runLoginfixtureHeadless`: "testcafe safari,chrome:headless ./page_Object_Model/tests/loginTest.js",
+  - `test:confFile`: "testcafe"
+  - `test:lintInint`: "eslint --init"
