@@ -42,6 +42,7 @@ class todayPage {
         this.countalltasks = await this.allTask.count
         for (let i = 0; i < this.countalltasks; i++) {
                 await t.scrollIntoView(Selector('#content'), { offsetX: 1, offsetY: 1 })
+                await t.wait(2000)
                 await t.hover(this.allTask.nth(0)).click(this.allTask.find('.more_actions_button').nth(0))
                 await t.click(Selector('.item_menu_list .danger_menu'))
                 await t.click(this.contentdeletedTasksButton.find('.ist_button_red').nth(0))

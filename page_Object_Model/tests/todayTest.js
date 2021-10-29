@@ -8,6 +8,7 @@ import loginPage from '../pages/loginPage'
 fixture ('Today page feature')
 .page `${URLS.LOGIN_URL}`
 .beforeEach(async t =>{
+    await t.wait(2000)
     await t.useRole(STANDARD_USER)
     await basePage.ClickontodayOption()
 })
